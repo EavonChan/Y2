@@ -1,0 +1,4 @@
+ #memu{display: block}
+    #ulList{display: none;}
+    ul{padding: 10px;}
+    li{margin: 10px;padding: 5px;}

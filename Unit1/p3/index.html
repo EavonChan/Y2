@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdMaster</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <link rel="stylesheet" href="css/main.css" media="screen">
+<!--    <link rel="stylesheet" href="css/667px.css" media="screen and (max-width: 667px)">-->
+<!--    <link rel="stylesheet" href="css/668px-799px.css" media="screen and (max-width: 799px)">-->
+<!--    <link rel="stylesheet" href="css/800px.css" media="screen and (min-width: 800px)">-->
+        <style>
+            @media (min-width: 800px) {
+                ul{width: 800px;display: flex;margin: 0 auto;}
+                li{flex: 1;margin:10px 20px}
+            }
+            @media (min-width: 668px)and (max-width: 668px) {
+                ul{display: flex;margin: 0 auto;height: 60px}
+                li{flex: 1;margin:10px 15px;}
+            }
+            @media (max-width: 667px) {
+                #memu{display: block}
+                #ulList{display: none;}
+                ul{padding: 10px;}
+                li{margin: 10px;padding: 5px;}
+            }
+        </style>
+</head>
+<body>
+<h1>AdMaster</h1>
+<img id="memu" src="images/1.png" height="26" width="26" alt=""/>
+<div class="nav">
+    <ul id="ulList">
+        <li><p>Home</p></li>
+        <li><p>solution</p></li>
+        <li><p>Market Lnsight</p></li>
+        <li><p>College</p></li>
+        <li><p>About Us</p></li>
+    </ul>
+</div>
+</body>
+</html>

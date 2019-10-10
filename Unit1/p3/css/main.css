@@ -1,0 +1,6 @@
+body{text-align: center}
+li{ list-style: none;border-radius: 5px;background: white;white-space: nowrap;}
+li:hover{background: #D5254A;}
+p{margin: 5px}
+div{background: #252122;}
+#memu{display: none}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>热门活动</title>
+    <style>
+        body {
+            text-align: center;
+            color: #8A877F;
+        }
+
+        #imgLogo {display: none;}
+        li {  list-style: none;}
+        @media (min-width: 800px) {
+            .nav{margin:10px auto 0;width: 800px;}
+            .nav li {float: left;flex: 1;width: 16.67%;transition: all .5s;height: 160px;}
+            #ulList {display: flex;}
+            .nav img {margin: 30px;border-radius: 50%;
+                box-shadow: 0 0 0 30px transparent;
+                background: rgba(255, 255, 255, 0.1);
+                transition: all .6s ease-in-out;}
+            a{margin-top:20px;}
+            .nav li:hover img {box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);transition: all .4s ease-in-out;}
+            .nav li:hover{height: 200px;}  }
+        @media (min-width: 520px) and (max-width: 799px) {
+            .nav{margin:0 auto;}
+            .nav li {
+                display: flex;
+                float: left;
+                width: 50%;
+                height: 60px;
+            }
+
+            .nav li img {
+                margin: 20px;
+                vertical-align:middle;
+                border-radius: 50%;
+                box-shadow: 0 0 0 30px transparent;
+                background: rgba(255, 255, 255, 0.1);
+                transition: all .5s;
+            }
+            p{display: inline;margin-left:70px}
+            .nav li:hover{opacity:0.5}
+        }
+
+        @media (max-width: 519px) {
+            #imgLogo {
+                float: left;
+                display: block;
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+            #ulList {
+                display: none
+            }
+            #ulList li{box-shadow: -15px 0px 1px;}
+        }
+
+    </style>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#imgLogo").click(function () {
+                $("#ulList").show();
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>响应式滑动菜单</h1>
+<div class="nav">
+    <img id="imgLogo" src="image/1.png"/>
+    <ul id="ulList">
+        <li style="background-color:#D06605"><a>
+            <img src="image/2.png"/>
+            <p>Home</p></a>
+        </li>
+        <li style="background-color:#E9941C"><a>
+            <img src="image/3.png"/>
+            <p>Services</p></a>
+        </li>
+        <li style="background-color:#1892BE"><a>
+            <img src="image/4.png"/>
+            <p>Portfollo</p></a>
+        </li>
+        <li style="background-color:#186CA3"><a>
+            <img src="image/5.png"/>
+            <p>Blog</p></a>
+        </li>
+        <li style="background-color:#1D3748"><a>
+            <img src="image/6.png"/>
+            <p>The team</p></a>
+        </li>
+        <li style="background-color:#172A37"><a>
+            <img src="image/7.png"/>
+            <p>Contact</p></a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
