@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+    .myform {
+        display: none;
+    }
+    .myul {
+        float: right;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        font-size: 14px;
+        margin-left: 6px;
+    }
+    .myul li {
+        float: left;
+    }
+    .myul li a {
+        font-size: 1em;
+        padding: 10px 6px;
+    }
+}
