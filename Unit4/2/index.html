@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>搜狐新闻选项卡</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <style>
+        body{
+            padding: 30px;
+        }
+        .box{
+            width: 320px;
+            border: 1px solid #c2c6cb;
+            padding-top: 4px;
+            padding-left: 4px;
+        }
+        .wrap{
+            padding: 14px;
+        }
+        .myList{
+            margin-top: 10px;
+            margin-left: -20px;
+            font-size: 14px;
+            line-height: 28px;
+        }
+
+        .myList a{
+            color: #000033;
+        }
+        .myList a:hover{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+<div class="box">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#name1"  >新闻</a></li>
+        <li><a href="#name2"  >娱乐</a></li>
+        <li><a href="#name3"  >军事</a></li>
+        <li><a href="#name4"  >社会</a></li>
+        <li><a href="#name5"  >体育</a></li>
+    </ul>
+
+    <!--选项卡面板-->
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="name1"> <!-- fade有淡入淡出的效果-->
+            <div class="wrap">
+                <img src="image/1.jpg" alt=""/>
+                <ul class="myList">
+                    <li><a href="#">村主任看风水收费一万不算违纪？</a></li>
+                    <li><a href="#">女经理色诱警官卖17台伪劣安检机</a></li>
+                    <li><a href="#">男子一夜情后疑染病将女子推下楼</a></li>
+                    <li><a href="#">网传四川成都一女性头部被人割掉</a></li>
+                    <li><a href="#">游客遭老虎咬死专家称园方无责任</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-pane fade " id="name2">
+            <div class="wrap">
+                <img src="image/2.jpg" alt=""/>
+                <ul class="myList">
+                    <li><a href="#">曾红遍中韩范冰冰为她龙套却因这陨落他曾是超级男模</a></li>
+                    <li><a href="#">赵薇凭什么首任威尼斯电影节评委</a></li>
+                    <li><a href="#">他是中国首位入狱童星今二度被捕</a></li>
+                    <li><a href="#">辣眼睛！</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="name3">
+            <div class="wrap">
+                <img src="image/3.jpg" alt=""/>
+                <ul class="myList">
+                    <li><a href="#">斯诺登再曝绝密 美暗中攻击他们</a></li>
+                    <li><a href="#">菲对比中菲军力 曝结果令其绝望</a></li>
+                    <li><a href="#">中国使必杀一招 美在南海投降了</a></li>
+                    <li><a href="#">红旗9突然撤下永兴岛 绝密曝光</a></li>
+                    <li><a href="#">张召忠对南海霸气表态 美日胆寒</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="name4">
+            <div class="wrap">
+                <img src="image/4.jpg" alt=""/>
+                <ul class="myList">
+                    <li><a href="#">夫妻后院发现巨型鸵鸟蛋真相惊呆</a></li>
+                    <li><a href="#">YY直播不雅视频10岁女孩现场脱衣</a></li>
+                    <li><a href="#">抢劫犯弃新婚妻带小姨子潜逃28年</a></li>
+                    <li><a href="#">婆婆与儿媳同生娃孙子比儿子还大</a></li>
+                    <li><a href="#">网红生产线：21岁小伙年入百万元</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="name5">
+            <div class="wrap">
+                <img src="image/5.jpg" alt=""/>
+                <ul class="myList">
+                    <li><a href="#">十大看点引爆国安恒大工体对决</a></li>
+                    <li><a href="#">国足集训名单：没球踢3将入选</a></li>
+                    <li><a href="#">中超赛场暴力冲突堪比格斗大赛</a></li>
+                    <li><a href="#">巴萨赴英国备战 梅西换新造型</a></li>
+                    <li><a href="#">曼联全队 离京穆帅告别红魔球迷</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.12.4.js"></script>
+<script src='js/bootstrap.min.js'></script>
+<script>
+    $('.nav a').click(function(e){
+            e.preventDefault();
+            $(this).tab('show');
+        })
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <style>
+        #div1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: all 3s;
+        }
+
+        #div1:hover {
+            background: green;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<div id="div1"></div>
+<button class="btn btn-primary" data-toggle="modal" data-target="#mymodal">点击按钮触发弹框2</button>
+<a href="#mymodal" class="btn btn-primary" data-toggle="modal" >点击按钮触发弹框</a>
+<div id="mymodal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">我是标题</h4>
+            </div>
+            <div class="media-body">
+                <p>我是内容……</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button class="btn btn-primary">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var div = document.getElementById('div1');
+    div.addEventListener('transitionend', function () {
+        alert("ogbomosho");
+    });
+    $('.modal').modal();
+</script>
+</body>
+</html>
